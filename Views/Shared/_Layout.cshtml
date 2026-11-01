@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A place to explore home lab projects, services, and notes.">
+  <title>@ViewData["Title"] | Home Lab</title>
+  <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true">
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" asp-controller="Home" asp-action="Index"><span class="brand-mark">▦</span> HOME LAB <span class="brand-sub">/ NOTES</span></a>
+    <nav aria-label="Main navigation">
+      <a asp-controller="Home" asp-action="Index">Home</a>
+      <a asp-controller="Lab" asp-action="Index">The lab</a>
+      <a asp-controller="Lab" asp-action="GameServers">Games</a>
+      <a asp-controller="Lab" asp-action="MediaServers">Media</a>
+    </nav>
+  </header>
+  <main id="top">@RenderBody()</main>
+  <footer class="wrap footer"><span>▦ &nbsp; HOME LAB / NOTES</span><span>BUILT FOR CURIOSITY.</span></footer>
+</body>
+</html>
